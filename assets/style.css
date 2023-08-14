@@ -1,26 +1,33 @@
 * {
     box-sizing: border-box;
-    padding: 5px;
+    padding: 0px;
     margin: 0
 }
 
 body {
-  background-color: white;  
+  background-color: #070748;  
 }
 
 header {
     padding: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(246, 122, 5);
-    color: #030332;
+    background-color: rgb(5, 158, 246);
+    color: #070748;
+    margin-top: 5px;
 }
 
 header h1 {
     display: inline-block;
-    background-color: rgb(3, 3, 50);
+    background-color: rgb(246, 122, 5);
     font-size: 48px;
-    color: white;
+    color: #070748;
     padding: 5px;
+}
+
+header h1 span {
+    color: black;
+    background-color: rgba(255, 234, 0, 0.905);
+    font-weight: bold;
+    font-family: Arial;
 }
 
 header nav {
@@ -39,44 +46,55 @@ header nav ul  li {
     margin-left: 25px;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: rgba(255, 234, 0, 0.905);
 }
 
 img {
     height: 300px;
     width: 100%;
+    margin-top: 5px;
     margin-bottom: 0px;
-    background-image: url(../assets/abstract.jpg);
+    background-image: url(20230314_075951.jpg);
     background-size: cover;
     background-position: center;
     padding: 0%;
-    margin-top: 5px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    
 }
 
 .aboutme {
-    width: 20%;
+    width: 15%;
     height: 400px;
     background-color: rgb(246, 122, 5);
     font-size: 48px;
     font-weight: bold;
     text-align: left;
-    color: rgb(3, 3, 50);
+    color: #070748;
     text-decoration: underline;
-    text-decoration-color: white;
+    text-decoration-color: rgba(255, 234, 0, 0.905);
     padding-top: 152px;
+    padding-left: 10px;
 }
 
 .pic {
     height: 400px;
     width: 20%;
-    background-color: #030332;
+    background-color: rgb(5, 158, 246);
     padding: 50px;
     
+}
+
+.bio {
+    height: 400px;
+    width: 85%;
+    color: #070748;
+    text-align: left;
+    font-family: cursive;
+    font-size: 20px;
+    
+    background-color: rgba(255, 234, 0, 0.905);
 }
 
