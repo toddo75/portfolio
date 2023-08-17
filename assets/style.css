@@ -193,13 +193,26 @@ img {
     background-color: rgba(255, 234, 0, 0.905);    
 }
 
-@media screen and (max-width: 360px) {
+@media  screen and (max-width: 768px) {
+    main {display: inline-block;}
+    aside {width: auto;}
+    .about-me {display: inline-block; width: 100%;}
+    .my-work {display: inline-block; width: 100%;}
+    .card-1 {width: 550px;}
+    .big-card {width: 550px;}
+    aside {width: 100%;}
+    .contact-me {display: inline-block; width: 100%;}
+    
+}
+
+@media screen and (max-width: 412px) {
    main {display: inline-block;}
    .about-me {display: inline-block; width: 100%;}
    .my-work {display: inline-block; width: 100%;}
    .card-1 {width: 350px;}
    .big-card {width: 350px;}
    .contact-me {display: inline-block; width: 100%;}
+   
 }
 
 
