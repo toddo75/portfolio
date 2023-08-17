@@ -1,13 +1,18 @@
+/*arranged css file with class selectors first and in order, then id selectors second and in order, followed by media query*/
+
+/*universal selector for the entire page setting sizing, padding and margin*/
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0
 }
 
+/*class selector for entire body setting background color*/
 body {
   background-color:  rgb(246, 122, 5);;  
 }
 
+/*class selector for header setting colors, padding and margin*/
 header {
     padding: 20px;
     background-color: rgb(5, 158, 246);
@@ -16,6 +21,7 @@ header {
     margin-bottom: 10px;
 }
 
+/*class selector for h1 in headwe setting colors, padding and display*/
 header h1 {
     display: inline-block;
     background-color: rgb(246, 122, 5);
@@ -24,6 +30,7 @@ header h1 {
     padding: 5px;
 }
 
+/*class selector for header setting colors, fonts, padding*/
 header h1 span {
     color: black;
     background-color: rgba(255, 234, 0, 0.905);
@@ -31,6 +38,7 @@ header h1 span {
     font-family: Arial;
 }
 
+/*class selector for nav bar setting colors, padding, font size and margin*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -38,15 +46,18 @@ header nav {
     font-size: 30px;
 }
 
+/*class selector for unordered lis setting to no list bullets*/
 header nav ul {
     list-style-type: none;
 }
 
+/*class selector for list setting display and margin*/
 header nav ul  li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/*class selector for anchors setting colors and font style*/
 a {
     color: #070748;
     text-decoration: underline;
@@ -54,11 +65,13 @@ a {
     font-weight: bold;
 }
 
+/*class selector for main setting as flex wrap*/
 main {
     display: flex;
     flex-wrap:wrap;
 }
 
+/*class selector for aside setting colors, padding, width and margin*/
 aside {
     width: 12%;
     margin-top: 5px;
@@ -73,7 +86,7 @@ aside {
     text-decoration: underline;
     text-decoration-color: rgba(255, 234, 0, 0.905);
 }
-
+ /*class selector for footer setting colors, padding, size, font style and margin*/
 footer {
     height: 100px;
     width: 100%;
@@ -87,6 +100,7 @@ footer {
     margin-top: 5px;
 }
 
+/*id selector for background image setting size*/
 .backgroundimg {
     height: 300px;
     width: 100%;
@@ -95,7 +109,7 @@ footer {
     background-position: center;
 }
 
-
+/*id selector for about me section, setting attributes*/
 .about-me {
     height: auto;
     width: 85%;
@@ -108,11 +122,13 @@ footer {
     background-color: rgba(255, 234, 0, 0.905);
 }
 
+/*id selector for my pic setting size*/
 .pic {
     width: 150px;
     height: 250px;
 }
 
+/*id selector my work section, setting attributes*/
 .my-work {
     display: flex;
     flex-wrap: wrap;
@@ -125,21 +141,25 @@ footer {
     background-color: rgba(255, 234, 0, 0.905);
 }
 
+/*id selector setting size and position of the section*/
 .card-1 {
     width: 600px;
     position: relative;
     margin-top: 5px;
 }
 
+/*id selector for big website pic setting size*/
 .big-card {
     width: 600px;
     height: 300px;
 }
 
+/*id selector so when hovered goes opaque*/
 .big-card:hover {
     opacity: 0.8; 
  }
 
+ /*id selector for size of text block*/
 .text-block {
     position: absolute;
     bottom: 20px;
@@ -150,25 +170,30 @@ footer {
     padding-right: 20px;
 }
 
+/*id setting section as flex*/
 .small-container {
     display: flex;
     flex-wrap: wrap;
 }
 
+/*id selector postioning the pics*/
 .small-card {
     position: relative;
 }
 
+/*class selector is out of order but felt it belonged hear this is the size of the images for the depoyed sights*/
 img {
     width: 200px;
     height: 200px;
    padding: 5px; 
  }
 
+ /*id selector so when hovered goes opaque*/
 .small-card:hover {
     opacity: 0.8;
  }
 
+ /*id selector for size of text block*/
  .small-text-box {
     position: absolute;
     background-color: black;
@@ -179,6 +204,7 @@ img {
     right: 20px;
 }
 
+/*id selector contact me, setting attributes*/
 .contact-me {
     display: flex;
     justify-content: space-between;
@@ -193,6 +219,7 @@ img {
     background-color: rgba(255, 234, 0, 0.905);    
 }
 
+/*media querey for max 768px*/
 @media  screen and (max-width: 768px) {
     main {display: inline-block;}
     aside {width: auto;}
@@ -205,6 +232,7 @@ img {
     
 }
 
+/*media querey for max 412px*/
 @media screen and (max-width: 412px) {
    main {display: inline-block;}
    .about-me {display: inline-block; width: 100%;}
